@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <p>Form Pendaftaran</p>
+    </header>
+    <div class="container">
+        
+        <form action="#" method="post" class="form-overlay">
+            <label for="nama">Nama :</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="alamat">Alamat :</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tgl">Tanggal lahir :</label>
+            <input type="date" id="tgl" name="tgl" required>
+
+            <label for="nomor">No Telepon :</label>
+            <input type="tel" id="nomor" name="nomor" required>
+
+            <label for="gender">Jenis Kelamin :</label>
+            <select name="gender" id="gender">
+                <option value="">Jenis Kelamin</option>
+                <option value="male">Laki-laki</option>
+                <option value="female">Perempuan</option>
+            </select>
+
+            <label for="jurusan">Jurusan :</label>
+            <select name="jurusan" id="jurusan">
+                <option value="">Jurusan</option>
+                <option value="ti">Teknologi Informasi</option>
+                <option value="other">Lainnya</option>
+            </select>
+
+            <label for="katogeri">Kategori Lomba :</label>
+            <select name="kategori" id="kategori">
+                <option value="">Kategori Lomba</option>
+                <option value="badminton">Badminton</option>
+                <option value="futsal">Futsal</option>
+                <option value="lari">Lari</option>
+                <option value="baseball">Baseball</option>
+                <option value="Volly">Volly</option>
+            </select>
+
+            <label>Status:</label>
+            <div class="radio-group">
+                <input type="radio" id="pelajar" name="status" value="pelajar">
+                <label for="pelajar">Pelajar</label>
+
+                <input type="radio" id="mahasiswa" name="status" value="mahasiswa">
+                <label for="mahasiswa">Mahasiswa</label>
+
+                <input type="radio" id="pekerja" name="status" value="pekerja">
+                <label for="pekerja">Pekerja</label>
+            </div>
+
+            <label for="pesan">Pesan atau Komentar:</label>
+            <textarea name="pesan" id="pesan" rows="4" placeholder="Tuliskan Pesan atau Komentar Anda di sini"></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
+</body>
+</html>

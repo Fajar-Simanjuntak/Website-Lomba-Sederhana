@@ -1,0 +1,135 @@
+@font-face{
+    font-family: 'hHachimaki';
+    src: url(font/hHachimaki.ttf);
+}
+
+body{
+    background-image: url('/background.jpg');
+    font-family: 'Poppins';
+}
+
+header{
+    margin-bottom: -20px;
+    padding-top: 6px;
+    padding-bottom: 5px;
+}
+
+p{
+    text-align: center;
+    font-family: 'hHachimaki';
+    color: #00ffd5;
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+form{
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #00ffd5;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: rgb(23, 23, 23);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #38e6e6;
+    color: white;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: black;
+}
+
+.radio-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+textarea{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.gambar1{
+    width: 600px;
+    height: 500px;
+    background-color: #383a3a;
+}
+
+.gambar2{
+    width: 680px;
+    height: auto;
+    background-color: #383a3a;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Sesuaikan ukuran */
+    margin: auto;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-overlay {
+    position: absolute;
+    top: 20%; /* Sesuaikan dengan kebutuhan */
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: rgba(0, 255, 255, 0.8); /* Warna overlay transparan */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Sesuaikan ukuran form */
+}

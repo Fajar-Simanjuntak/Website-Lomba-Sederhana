@@ -1,0 +1,239 @@
+@font-face{
+    font-family: 'Sport Day Bold';
+    src: url(font/Sport\ Day\ Bold.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #0b0b0b;
+}
+
+
+.header {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    font-weight: bold;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+}
+
+.logo{
+    color: white;
+    font-size: 34px;
+}
+
+span {
+    color: #00ffee;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+nav ul li a{
+    color: white;
+    margin-right: 65px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover{
+    color: #00ffee;
+    transition: .3s;
+}
+
+.container1 {
+    margin-left: 30px;
+    display: flex;
+    line-height: 1.6;
+    gap: 15rem;
+    color: #fff; 
+    padding: 15px; 
+}
+
+.container1 h1 {
+    color: #00ffee;
+    font-family: 'Sport Day Bold';
+    font-size: 30px;
+}
+
+.content1 ol{
+    color: white;
+    margin-left: 30px;
+}
+
+.container2{
+    position: relative;
+    padding: 15px;
+    margin-top: -400px;
+    line-height: 1.6;
+    margin-left: 30px;
+    color: white;
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+}
+
+.container2 h1 {
+    color: #00ffee;
+    font-family: 'Sport Day Bold';
+    font-size: 30px;
+}
+
+.content2 h3{
+    color: white;
+}
+
+.content2 ul{
+    color: white;
+    margin-left: 20px;
+}
+
+.content3 {
+    width: 30%;
+}
+
+.content3 h1{
+    font-family: 'Sport Day Bold';
+    color: #00ffee;
+}
+
+.content3 ol{
+    color: white;
+    margin-left: 30px;
+}
+
+.content4 {
+    width: 70%;
+}
+
+.content4 h1{
+    color: #00ffee;
+}
+
+.content4 ul{
+    margin-left: 30px;
+}
+
+.content4 h1{
+    font-family: 'Sport Day Bold';
+}
+
+aside{
+    padding: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* button */
+.btn{
+    padding: 15px 25px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    border: none;
+    outline: none;
+    color: #00ffee;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+.btn::after{
+    content: "";
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(41, 41, 41);
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+/* glow */
+.btn::before{
+    content: "";
+    background: linear-gradient(        45deg,        #00ffee, #0effa6, #ff0000, #fbff00,        #3c00ff, #00ffee, #b300ff, #00ffee    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    animation: glowing 20s linear infinite;
+    /*animation*/transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+    opacity: 0;
+    -webkit-animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+}
+
+/* hover */
+.btn:hover::before{
+    opacity: 1;
+}
+
+.btn:active:after {
+    background: transparent;
+}
+
+.btn:active{
+    color: #000;
+    font-weight: bold;
+}
+
+footer{
+    display: flex;
+    padding-top: 20px;  
+    padding-bottom: 20px;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+} 
+
+.home-img{
+    border-radius: 50%;
+}
+
+.home-img img{
+    position: relative;
+    top: 3rem;
+    width: 32vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px #00ffee;
+    cursor: pointer;
+    transition: 0.4s ease-in-out ;
+    max-width: 500px;
+    padding: 20px;
+    margin-top: auto;
+}
+
+.home-img img:hover{
+    box-shadow: 0 0 25px  #00ffee,
+                0 0 50px  #00ffee,
+                0 0 100px #00ffee;
+}
+
